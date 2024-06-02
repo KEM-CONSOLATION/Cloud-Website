@@ -1,41 +1,88 @@
-import AboutImage from "../assets/aboutImage.svg";
+import Circle from "../assets/circle.svg";
+import Border from "../assets/border.svg";
+import { Typewriter } from "react-simple-typewriter";
+import Counter from "./Counter";
 
 const Numbers = () => {
   return (
-    <div className=" bg-[#FAFAFA]">
-      <div className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[120px]">
-        <p className=" py-[8px] px-[12px] inline-block bg-[#D0F7EC] rounded-[20px] font-SatoshiMedium text-[14px] text-[#2B6151]">
-          About us
-        </p>
-        <div className=" md:flex items-start justify-between">
-          <div className=" mt-[24px]">
-            <img src={AboutImage} alt="" />
+    <div className=" bg-[#061C60]">
+      <div className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[60px]">
+        <div className=" md:flex items-center justify-between">
+          <div className=" max-w-[600px]">
+            <p className=" text-[30px] md:text-[64px] font-SatoshiMedium text-white md:leading-[72px]">
+              {" "}
+              <Typewriter
+                words={["Our numbers speak for themselves "]}
+                loop={0}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={300}
+                delaySpeed={1000}
+              />
+            </p>
           </div>
 
-          <div className=" max-w-[500px] 2xl:max-w-[644px] grid gap-[24px]">
-            <div className="">
-              <p className=" text-[#061C60] font-Satoshi text-[25px] 2xl:text-[36px]">
-                With experienced teams and an agile framework, we prioritize our
-                clients&apos; commercial goals to deliver the highest business
-                value.
-              </p>
-            </div>
+          <div className=" hidden md:block">
+            <img src={Circle} alt="" />
+          </div>
+        </div>
 
-            <div className=" grid md:flex items-start gap-[24px]">
-              <p className=" text-[#575B5E] font-SatoshiRegular text-[18px] 2xl:text-[20px]">
-                Our agile approach allows us to be flexible and responsive,
-                adapting to changes quickly and efficiently to meet the evolving
-                needs of our clients.
-              </p>
-              <p className=" text-[#575B5E] font-SatoshiRegular text-[18px] 2xl:text-[20px]">
-                Through collaboration and continuous improvement, we align each
-                project with our clients&apos; strategic goals, delivering
-                tangible business results.
+        <div className=" text-white grid md:grid-cols-2 md:place-items-start lg:flex items-center justify-between">
+          <div className=" flex items-center gap-[50px]">
+            <img src={Border} alt="" />
+            <div className=" grid gap-[32px]">
+              <Counter
+                initialValue={0}
+                interval={1}
+                targetValue={6}
+                value={""}
+              />
+              <p className=" text-[#E7ECFC] font-SatoshiMedium text-[18px] md:text-[20px]">
+                Hubs Around the world
               </p>
             </div>
-            <div className="">
-              <p className=" py-[16px] px-[28px] inline-block border border-[#0E42E4] rounded-[8px] font-IBM text-[14px] text-[#0E42E4]">
-                View more
+          </div>
+          <div className=" flex items-center gap-[50px]">
+            <img src={Border} alt="" />
+            <div className=" grid gap-[32px]">
+              <Counter
+                initialValue={0}
+                interval={5}
+                targetValue={300}
+                value={"+"}
+              />
+              <p className=" text-[#E7ECFC] font-SatoshiMedium text-[18px] md:text-[20px]">
+                Startups Supported
+              </p>
+            </div>
+          </div>{" "}
+          <div className=" flex items-center gap-[50px]">
+            <img src={Border} alt="" />
+            <div className=" grid gap-[32px]">
+              <Counter
+                initialValue={0}
+                interval={1}
+                targetValue={20}
+                value={""}
+              />
+              <p className=" text-[#E7ECFC] font-SatoshiMedium text-[18px] md:text-[20px]">
+                Corporate Partners
+              </p>
+            </div>
+          </div>{" "}
+          <div className=" flex items-center gap-[50px]">
+            <img src={Border} alt="" />
+            <div className=" grid gap-[32px]">
+              <Counter
+                initialValue={0}
+                interval={5}
+                targetValue={235}
+                value={"M"}
+                currency={"$"}
+              />
+              <p className=" text-[#E7ECFC] font-SatoshiMedium text-[18px] md:text-[20px]">
+                Total raised since 2018
               </p>
             </div>
           </div>

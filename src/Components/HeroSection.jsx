@@ -1,7 +1,8 @@
+import { Typewriter } from "react-simple-typewriter";
 import BG from "../assets/GradientDark.svg";
 import HeroImage from "../assets/HeroMessage.svg";
 import Navbar from "./Navbar";
-
+import "aos/dist/aos.css";
 const HeroSection = () => {
   return (
     <div
@@ -11,10 +12,23 @@ const HeroSection = () => {
       <div className=" ">
         <Navbar />
 
-        <div className=" grid gap-[28px] md:flex items-start justify-between mt-[100px]   max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40">
+        <div
+          className=" grid gap-[28px] md:flex items-start justify-between mt-[100px]   max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40"
+          data-aos="fade-up"
+        >
           <div className="max-w-[758px] ">
             <p className="font-Satoshi text-[48px] text-white md:leading-[60px]">
-              Customised Integration Solutions for Modern Businesses.
+              <Typewriter
+                words={[
+                  "       Customised Integration Solutions for Modern Businesses. ",
+                ]}
+                loop={0}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={300}
+                delaySpeed={1000}
+              />
             </p>
             <p className="max-w-[600px] font-Satoshi-regular  text-[20px] text-white my-[32px]">
               Enhance Productivity and Connectivity with Cloud Integration

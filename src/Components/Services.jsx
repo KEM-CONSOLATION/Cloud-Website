@@ -5,7 +5,10 @@ import Lottery from "../assets/lottery.svg";
 const Services = () => {
   return (
     <div className=" bg-[#ffffff]">
-      <div className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[69px]">
+      <div
+        className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[69px]"
+        data-aos="fade-up"
+      >
         <div className=" max-w-[852px] mx-auto text-center">
           <p className=" py-[8px] px-[12px] inline-block bg-[#D0F7EC] rounded-[20px] font-SatoshiMedium text-[14px] text-[#2B6151]">
             Services

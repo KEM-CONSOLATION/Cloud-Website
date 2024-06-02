@@ -3,11 +3,14 @@ import AboutImage from "../assets/aboutImage.svg";
 const About = () => {
   return (
     <div className=" bg-[#FAFAFA]">
-      <div className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[120px]">
+      <div
+        className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[120px]"
+        data-aos="fade-up"
+      >
         <p className=" py-[8px] px-[12px] inline-block bg-[#D0F7EC] rounded-[20px] font-SatoshiMedium text-[14px] text-[#2B6151]">
           About us
         </p>
-        <div className=" md:flex items-start justify-between">
+        <div className=" grid place-items-center lg:flex lg:items-start lg:justify-between gap-[20px]">
           <div className=" mt-[24px]">
             <img src={AboutImage} alt="" />
           </div>
