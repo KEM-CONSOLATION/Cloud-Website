@@ -8,15 +8,15 @@ import ArrowLeft from "../assets/ArrowLeft.svg";
 const Portfolio = () => {
   const images = [Portfolio2, Portfolio3, Portfolio4, Portfolio4];
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const [touchStartX, setTouchStartX] = useState(null);
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? images.length - 3 : currentIndex - 1;
+    const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
   const nextSlide = () => {
-    const isLastSlide = currentIndex === images.length - 3;
+    const isLastSlide = currentIndex === images.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
@@ -28,6 +28,37 @@ const Portfolio = () => {
 
     return () => clearInterval(interval);
   }, [currentIndex]);
+
+  useEffect(() => {
+    const handleTouchStart = (e) => {
+      const touch = e.touches[0];
+      setTouchStartX(touch.clientX);
+    };
+
+    const handleTouchMove = (e) => {
+      if (!touchStartX) return;
+      const touch = e.touches[0];
+      const touchEndX = touch.clientX;
+      if (touchStartX - touchEndX > 75) {
+        nextSlide();
+        setTouchStartX(null);
+      }
+      if (touchStartX - touchEndX < -75) {
+        prevSlide();
+        setTouchStartX(null);
+      }
+    };
+
+    const slider = document.getElementById("slider");
+
+    slider.addEventListener("touchstart", handleTouchStart);
+    slider.addEventListener("touchmove", handleTouchMove);
+
+    return () => {
+      slider.removeEventListener("touchstart", handleTouchStart);
+      slider.removeEventListener("touchmove", handleTouchMove);
+    };
+  }, []);
 
   const sliderContainerStyles = {
     display: "flex",
@@ -48,11 +79,14 @@ const Portfolio = () => {
         </div>
 
         <div className="relative mt-[20px]">
-          <div style={sliderContainerStyles}>
+          <div id="slider" style={sliderContainerStyles}>
             {images
-              .slice(currentIndex, currentIndex + 3)
+              .slice(
+                currentIndex,
+                currentIndex + (window.innerWidth < 768 ? 1 : 3)
+              )
               .map((image, index) => (
-                <div key={index} className="min-w-[33.33%]">
+                <div key={index} className="min-w-[100%] md:min-w-[33.33%]">
                   <img
                     src={image}
                     alt={`Portfolio ${index + 1}`}
@@ -62,8 +96,8 @@ const Portfolio = () => {
               ))}
           </div>
           <div className="flex items-center gap-[24px] mt-4">
-            <img src={ArrowLeft} alt="" onClick={prevSlide} />
-            <img src={ArrowRight} alt="" onClick={nextSlide} />
+            <img src={ArrowLeft} alt="Previous" onClick={prevSlide} />
+            <img src={ArrowRight} alt="Next" onClick={nextSlide} />
           </div>
         </div>
       </div>

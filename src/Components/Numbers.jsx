@@ -28,9 +28,9 @@ const Numbers = () => {
           </div>
         </div>
 
-        <div className=" text-white grid md:grid-cols-2 md:place-items-start lg:flex items-center justify-between">
-          <div className=" flex items-center gap-[50px]">
-            <img src={Border} alt="" />
+        <div className=" text-white grid gap-[20px] items-start md:grid-cols-2 md:place-items-start lg:flex lg:items-center lg:justify-between">
+          <div className=" flex items-center gap-[50px] border rounded-[16px] border-[#8C8E91] md:border-none p-[24px] md:px-0">
+            <img src={Border} alt="" className=" hidden md:block" />
             <div className=" grid gap-[32px]">
               <Counter
                 initialValue={0}
@@ -43,8 +43,8 @@ const Numbers = () => {
               </p>
             </div>
           </div>
-          <div className=" flex items-center gap-[50px]">
-            <img src={Border} alt="" />
+          <div className=" flex items-center gap-[50px] border rounded-[16px] border-[#8C8E91] md:border-none p-[24px] md:px-0">
+            <img src={Border} alt="" className="hidden md:block" />
             <div className=" grid gap-[32px]">
               <Counter
                 initialValue={0}
@@ -57,8 +57,8 @@ const Numbers = () => {
               </p>
             </div>
           </div>{" "}
-          <div className=" flex items-center gap-[50px]">
-            <img src={Border} alt="" />
+          <div className=" flex items-center gap-[50px] border rounded-[16px] border-[#8C8E91] md:border-none p-[24px] md:px-0">
+            <img src={Border} alt="" className="hidden md:block" />
             <div className=" grid gap-[32px]">
               <Counter
                 initialValue={0}
@@ -71,8 +71,8 @@ const Numbers = () => {
               </p>
             </div>
           </div>{" "}
-          <div className=" flex items-center gap-[50px]">
-            <img src={Border} alt="" />
+          <div className=" flex items-center gap-[50px] border rounded-[16px] border-[#8C8E91] md:border-none p-[24px] md:px-0">
+            <img src={Border} alt="" className="hidden md:block" />
             <div className=" grid gap-[32px]">
               <Counter
                 initialValue={0}

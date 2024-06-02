@@ -34,13 +34,16 @@ const HeroSection = () => {
               Enhance Productivity and Connectivity with Cloud Integration
               Services. We&apos;re all about levelling up your product journey.
             </p>
-            <a className="px-[28px] py-[16px] rounded-[8px] bg-white text-[#141414] font-IBM text-[18px] font-[500]">
+            <a className=" hidden md:inline-block px-[28px] py-[16px] rounded-[8px] bg-white text-[#141414] font-IBM text-[18px] font-[500]">
               Partner with us
             </a>
           </div>
 
-          <div className=" max-w-[777px]">
-            <img src={HeroImage} alt="" className=" w-full" />
+          <div className=" max-w-[777px] my-[40px] md:my-0">
+            <img src={HeroImage} alt="" className=" w-full mb-[24px] md:mb-0" />
+            <a className=" md:hidden text-center block mt-[24px] px-[28px] py-[16px] rounded-[8px] bg-white text-[#061C60] md:text-[#141414] font-IBM text-[18px] font-[500]">
+              Find out more
+            </a>
           </div>
         </div>
       </div>

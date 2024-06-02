@@ -6,10 +6,10 @@ const Services = () => {
   return (
     <div className=" bg-[#ffffff]">
       <div
-        className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[69px]"
+        className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 md:py-[69px]"
         data-aos="fade-up"
       >
-        <div className=" max-w-[852px] mx-auto text-center">
+        <div className=" max-w-[852px] mx-auto md:text-center">
           <p className=" py-[8px] px-[12px] inline-block bg-[#D0F7EC] rounded-[20px] font-SatoshiMedium text-[14px] text-[#2B6151]">
             Services
           </p>
@@ -24,7 +24,7 @@ const Services = () => {
               <p className=" hidden mb-[24px] py-[8px] px-[12px] md:inline-block bg-[#D0F7EC] rounded-[20px] font-SatoshiMedium text-[14px] text-[#2B6151]">
                 Services
               </p>
-              <p className=" font-Inter font-[600] text-[#061C60] text-[36px]">
+              <p className=" font-Inter font-[600] text-[#061C60] text-[30px] md:text-[36px]">
                 VAS
               </p>
               <p className=" font-SatoshiRegular text-[20px] text-[#575B5E]  leading-[30px] py-[32px]">
@@ -57,7 +57,7 @@ const Services = () => {
               <p className="hidden mb-[24px] py-[8px] px-[12px] md:inline-block bg-[#D0F7EC] rounded-[20px] font-SatoshiMedium text-[14px] text-[#2B6151]">
                 Services
               </p>
-              <p className="font-Inter font-[600] text-[#061C60] text-[36px]">
+              <p className="font-Inter font-[600] text-[#061C60] text-[30px] md:text-[36px]">
                 Games
               </p>
               <p className="font-SatoshiRegular text-[20px] text-[#575B5E] leading-[30px] py-[32px]">
@@ -81,7 +81,7 @@ const Services = () => {
               <p className=" hidden mb-[24px] py-[8px] px-[12px] md:inline-block bg-[#D0F7EC] rounded-[20px] font-SatoshiMedium text-[14px] text-[#2B6151]">
                 Services
               </p>
-              <p className=" font-Inter font-[600] text-[#061C60] text-[36px]">
+              <p className=" font-Inter font-[600] text-[#061C60] text-[30px] md:text-[36px]">
                 Lottery & Trivia games
               </p>
               <p className=" font-SatoshiRegular text-[20px] text-[#575B5E]  leading-[30px] py-[32px]">
