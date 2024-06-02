@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 const Counter = ({ initialValue, interval, targetValue, value, currency }) => {
   const [count, setCount] = useState(initialValue);
@@ -23,4 +24,13 @@ const Counter = ({ initialValue, interval, targetValue, value, currency }) => {
     </div>
   );
 };
+
+Counter.propTypes = {
+  initialValue: PropTypes.number.isRequired,
+  interval: PropTypes.number.isRequired,
+  targetValue: PropTypes.number.isRequired,
+  value: PropTypes.string.isRequired,
+  currency: PropTypes.string,
+};
+
 export default Counter;
