@@ -10,6 +10,8 @@ import NumbersAbout from "../Components/NumbersAbout";
 import CloudCode from "../Components/CloudCode";
 import Experts from "../Components/Experts";
 import AboutTestimonials from "../Components/AboutTestimonials";
+import BG from "../assets/partner.png";
+import MobileBG from "../assets/LaunchMobile.png";
 const AboutPage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -44,7 +46,12 @@ const AboutPage = () => {
       <NumbersAbout />
       <CloudCode />
       <Experts />
-      <Launch />
+      <Launch
+        backgroundImage={BG}
+        Mobile={MobileBG}
+        text="
+      Launch your product with Cloud integrated"
+      />
       <Footer />
 
       {isVisible && (

@@ -8,7 +8,8 @@ import Launch from "../Components/Launch";
 import Footer from "../Components/Footer";
 import ServiceHeroSection from "../Components/ServiceHeroSection";
 import ServicesPageComponent from "../Components/ServicesPageComponent";
-
+import BG from "../assets/partner.png";
+import MobileBG from "../assets/LaunchMobile.png";
 const ServicesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -41,7 +42,13 @@ const ServicesPage = () => {
       <ServicesPageComponent />
       <Testimonials />
       <Partners />
-      <Launch />
+
+      <Launch
+        backgroundImage={BG}
+        Mobile={MobileBG}
+        text="
+      Launch your product with Cloud integrated"
+      />
       <Footer />
 
       {isVisible && (

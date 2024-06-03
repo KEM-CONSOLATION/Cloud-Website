@@ -1,24 +1,29 @@
 import { Typewriter } from "react-simple-typewriter";
 import Counter from "./Counter";
+import { useLocation } from "react-router-dom";
 
 const NumbersAbout = () => {
+  const location = useLocation();
+  const pathName = location.pathname;
   return (
     <div className=" bg-[#ffffff    ]">
       <div className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[60px]">
-        <div className=" max-w-[600px] mx-auto">
-          <p className=" text-[30px] md:text-[36px] font-Inter font-[600] text-[#061C60] md:leading-[72px]">
-            {" "}
-            <Typewriter
-              words={["Our Numbers speak for themselves "]}
-              loop={0}
-              cursor
-              cursorStyle="_"
-              typeSpeed={70}
-              deleteSpeed={300}
-              delaySpeed={1000}
-            />
-          </p>
-        </div>
+        {pathName !== "/partners" && (
+          <div className=" max-w-[600px] mx-auto">
+            <p className=" text-[30px] md:text-[36px] font-Inter font-[600] text-[#061C60] md:leading-[72px]">
+              {" "}
+              <Typewriter
+                words={["Our Numbers speak for themselves "]}
+                loop={0}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={300}
+                delaySpeed={1000}
+              />
+            </p>
+          </div>
+        )}
 
         <div className=" text-[#061C60] grid gap-[20px] items-start md:grid-cols-2 md:place-items-start lg:flex lg:items-center lg:justify-between">
           <div className=" grid gap-[32px] text-center">

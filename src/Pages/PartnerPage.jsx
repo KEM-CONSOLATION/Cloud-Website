@@ -1,19 +1,18 @@
 import { useEffect, useState } from "react";
-import About from "../Components/About";
-import HeroSection from "../Components/HeroSection";
-import Numbers from "../Components/Numbers";
-import Partners from "../Components/Partners";
-import Portfolio from "../Components/Portfolio";
-import Services from "../Components/Services";
-import Testimonials from "../Components/Testimonials";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { RiArrowUpDoubleLine } from "react-icons/ri";
 import Launch from "../Components/Launch";
 import Footer from "../Components/Footer";
-import BG from "../assets/partner.png";
+import NumbersAbout from "../Components/NumbersAbout";
+import PartnerHeroSection from "../Components/PartnerHeroSection";
+import PartnersPhilosophy from "../Components/PartnersPhilosophy";
+import PartnersPartners from "../Components/PartnersPartners";
+import Portfolio from "../Components/Portfolio";
+import Testimonials from "../Components/Testimonials";
+import BG from "../assets/partner_launch.png";
 import MobileBG from "../assets/LaunchMobile.png";
-const LandingPage = () => {
+const PartnerPage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const scrollToTop = () => {
@@ -41,21 +40,19 @@ const LandingPage = () => {
 
   return (
     <div>
-      <HeroSection />
-      <Partners />
-      <About />
-      <Services />
+      <PartnerHeroSection />
+      <PartnersPhilosophy />
+      <NumbersAbout />
+      <PartnersPartners />
       <Portfolio />
-      <Numbers />
       <Testimonials />
       <Launch
         backgroundImage={BG}
         Mobile={MobileBG}
         text="
-      Launch your product with Cloud integrated"
+        Partner with us"
       />
       <Footer />
-
       {isVisible && (
         <button
           onClick={scrollToTop}
@@ -68,4 +65,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default PartnerPage;

@@ -37,7 +37,11 @@ const Navbar = () => {
     <div
       className={`py-2 sticky z-50 top-0 transition-all duration-300 ease-in-out font-Manrope ${
         !scrollingUp || scrolledPastInitial
-          ? `${pathName === "/about" ? " bg-[#F1EDE8]" : "bg-[#071A45]"}`
+          ? pathName === "/about"
+            ? "bg-[#F1EDE8]"
+            : pathName === "/partners"
+            ? "bg-[#020406]"
+            : "bg-[#071A45]"
           : "bg-transparent"
       }`}
     >
