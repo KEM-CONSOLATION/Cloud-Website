@@ -37,7 +37,7 @@ const Navbar = () => {
     <div
       className={`py-2 sticky z-50 top-0 transition-all duration-300 ease-in-out font-Manrope ${
         !scrollingUp || scrolledPastInitial
-          ? pathName === "/about"
+          ? pathName === "/about" || pathName === "/careers"
             ? "bg-[#F1EDE8]"
             : pathName === "/partners"
             ? "bg-[#020406]"
@@ -49,12 +49,21 @@ const Navbar = () => {
         <div className="grid md:flex justify-between items-center">
           <div className="w-[150px] md:w-[200px] mt-5 md:mt-0">
             <Link to="/">
-              <img src={pathName === "/about" ? Logo2 : Logo} alt="" />
+              <img
+                src={
+                  pathName === "/about" || pathName === "/careers"
+                    ? Logo2
+                    : Logo
+                }
+                alt=""
+              />
             </Link>
           </div>
           <div
             className={`md:flex md:items-center ${
-              pathName === "/about" ? " text-[#061C60]" : "text-white"
+              pathName === "/about" || pathName === "/careers"
+                ? " text-[#061C60]"
+                : "text-white"
             }  font-[400] ${!open ? "block" : "hidden"}`}
           >
             <ul className="grid md:flex gap-5 my-5 md:gap-10 list-none text-[14px] lg:text-[16px]">

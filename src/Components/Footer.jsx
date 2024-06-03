@@ -24,6 +24,16 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      <div className="font-SatoshiRegular text-[#141414] text-[12px] grid md:flex md:items-center md:justify-between mt-[24px] md:mt-0">
+        <p className=" ">
+          Copyright © 2024 Cloud Integrated Limited. All rights reserved.
+        </p>
+        <div className=" grid md:flex items-center gap-[24px] mt-[24px] md:mt-0 text-[18px] md:text-[14px] font-[600] text-[#061C60] md:text-[#141414] font-IBM">
+          <p>Terms of Service</p>
+          <p>Privacy Police</p>
+        </div>
+      </div>
     </div>
   );
 };

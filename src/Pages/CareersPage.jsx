@@ -2,16 +2,11 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { RiArrowUpDoubleLine } from "react-icons/ri";
-import Launch from "../Components/Launch";
 import Footer from "../Components/Footer";
-import NumbersAbout from "../Components/NumbersAbout";
-import PartnersPhilosophy from "../Components/PartnersPhilosophy";
-import PartnersPartners from "../Components/PartnersPartners";
-import Portfolio from "../Components/Portfolio";
-import Testimonials from "../Components/Testimonials";
-import BG from "../assets/partner_launch.png";
-import MobileBG from "../assets/LaunchMobile.png";
+
 import CareerHeroSection from "../Components/CareerHeroSection";
+import Benefits from "../Components/Benefits";
+import Openings from "../Components/Openings";
 
 const CareersPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -42,17 +37,8 @@ const CareersPage = () => {
   return (
     <div>
       <CareerHeroSection />
-      <PartnersPhilosophy />
-      <NumbersAbout />
-      <PartnersPartners />
-      <Portfolio />
-      <Testimonials />
-      <Launch
-        backgroundImage={BG}
-        Mobile={MobileBG}
-        text="
-        Partner with us"
-      />
+      <Benefits />
+      <Openings />
       <Footer />
       {isVisible && (
         <button
