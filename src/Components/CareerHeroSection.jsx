@@ -2,7 +2,8 @@ import { Typewriter } from "react-simple-typewriter";
 import HeroImage from "../assets/handshake.png";
 import Navbar from "./Navbar";
 import "aos/dist/aos.css";
-const PartnerHeroSection = () => {
+
+const CareerHeroSection = () => {
   return (
     <div className=" h-full md:h-screen bg-cover  bg-center bg-[#020406]">
       <div className=" ">
@@ -45,4 +46,4 @@ const PartnerHeroSection = () => {
   );
 };
 
-export default PartnerHeroSection;
+export default CareerHeroSection;

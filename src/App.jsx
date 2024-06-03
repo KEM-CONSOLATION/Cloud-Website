@@ -5,6 +5,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import AboutPage from "./Pages/AboutPage";
 import ServicesPage from "./Pages/ServicesPage";
 import PartnerPage from "./Pages/PartnerPage";
+import CareersPage from "./Pages/CareersPage";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/partners" element={<PartnerPage />} />
+          <Route path="/careers" element={<CareersPage />} />
         </Routes>
       </Router>
     </div>
