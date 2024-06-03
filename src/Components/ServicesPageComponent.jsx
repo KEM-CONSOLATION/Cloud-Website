@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ArrowDown from "../assets/arrowDown.png";
 import Line2 from "../assets/line2.svg";
 import Services from "../assets/services.png";
