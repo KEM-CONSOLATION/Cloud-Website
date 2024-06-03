@@ -120,7 +120,9 @@ const Navbar = () => {
           {open === true ? (
             <div
               className={`absolute top-[25px] right-4 md:hidden cursor-pointer ${
-                pathName === "/about" ? "text-[#061C60]" : "text-white"
+                pathName === "/about" || pathName === "/careers"
+                  ? "text-[#061C60]"
+                  : "text-white"
               }`}
               onClick={() => setopen(false)}
             >
@@ -129,7 +131,9 @@ const Navbar = () => {
           ) : (
             <div
               className={`absolute top-[25px] right-4 md:hidden cursor-pointer ${
-                pathName === "/about" ? "text-[#061C60]" : "text-white"
+                pathName === "/about" || pathName === "/careers"
+                  ? "text-[#061C60]"
+                  : "text-white"
               }`}
               onClick={() => setopen(true)}
             >
