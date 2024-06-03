@@ -35,7 +35,7 @@ const ServicesPageComponent = () => {
       ],
     },
     {
-      title: "IT services",
+      title: "Entertainment and Media",
       sections: [
         {
           title: "Cloud services",
@@ -56,7 +56,109 @@ const ServicesPageComponent = () => {
       ],
     },
     {
-      title: "Marketing services",
+      title: "Education and Health",
+      sections: [
+        {
+          title: "Digital marketing",
+          items: [
+            "Search Engine Optimization (SEO)",
+            "Pay-Per-Click (PPC) advertising",
+            "Social media marketing",
+          ],
+        },
+        {
+          title: "Content creation",
+          items: ["Blog writing", "Video production", "Graphic design"],
+        },
+      ],
+    },
+    {
+      title: "Financial Services",
+      sections: [
+        {
+          title: "Digital marketing",
+          items: [
+            "Search Engine Optimization (SEO)",
+            "Pay-Per-Click (PPC) advertising",
+            "Social media marketing",
+          ],
+        },
+        {
+          title: "Content creation",
+          items: ["Blog writing", "Video production", "Graphic design"],
+        },
+      ],
+    },
+    {
+      title: "Enterprise Solutions",
+      sections: [
+        {
+          title: "Digital marketing",
+          items: [
+            "Search Engine Optimization (SEO)",
+            "Pay-Per-Click (PPC) advertising",
+            "Social media marketing",
+          ],
+        },
+        {
+          title: "Content creation",
+          items: ["Blog writing", "Video production", "Graphic design"],
+        },
+      ],
+    },
+    {
+      title: "Security Services",
+      sections: [
+        {
+          title: "Digital marketing",
+          items: [
+            "Search Engine Optimization (SEO)",
+            "Pay-Per-Click (PPC) advertising",
+            "Social media marketing",
+          ],
+        },
+        {
+          title: "Content creation",
+          items: ["Blog writing", "Video production", "Graphic design"],
+        },
+      ],
+    },
+    {
+      title: "Customer Engagement",
+      sections: [
+        {
+          title: "Digital marketing",
+          items: [
+            "Search Engine Optimization (SEO)",
+            "Pay-Per-Click (PPC) advertising",
+            "Social media marketing",
+          ],
+        },
+        {
+          title: "Content creation",
+          items: ["Blog writing", "Video production", "Graphic design"],
+        },
+      ],
+    },
+    {
+      title: "Information and Utilities",
+      sections: [
+        {
+          title: "Digital marketing",
+          items: [
+            "Search Engine Optimization (SEO)",
+            "Pay-Per-Click (PPC) advertising",
+            "Social media marketing",
+          ],
+        },
+        {
+          title: "Content creation",
+          items: ["Blog writing", "Video production", "Graphic design"],
+        },
+      ],
+    },
+    {
+      title: "Miscellaneous",
       sections: [
         {
           title: "Digital marketing",
@@ -87,15 +189,15 @@ const ServicesPageComponent = () => {
           </p>
         </div>
 
-        <div className="grid gap-[24px] md:flex items-start justify-between">
+        <div className="grid gap-[10px] md:gap-[24px] md:grid md:grid-cols-2 lg:grid-cols-3 items-start mt-[80px]">
           {cardContent.map((card, index) => (
             <div
               key={index}
-              className="p-[24px] bg-white mt-[80px] max-w-[477px] rounded-[16px]"
+              className="p-[24px] bg-white  max-w-[477px] rounded-[16px]"
             >
               <img src={Services} alt="" className=" " />
               <div className="flex items-center justify-between">
-                <p className="font-SatoshiMedium text-[25px] py-[13px] text-[#061C60] flex items-center gap-[10px]">
+                <p className="font-SatoshiMedium text-[20px] md:text-[25px] py-[13px] text-[#061C60] flex items-center gap-[10px]">
                   <span>
                     <img src={Line2} alt="" />
                   </span>
