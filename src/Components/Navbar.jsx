@@ -5,7 +5,7 @@ import { CloseLineIcon, Menu1LineIcon } from "../assets/icons";
 import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const [open, setopen] = useState(true);
+  const [open, setOpen] = useState(true);
   const [scrollY, setScrollY] = useState(0);
   const [scrollingUp, setScrollingUp] = useState(false);
   const [scrolledPastInitial, setScrolledPastInitial] = useState(false);
@@ -24,12 +24,28 @@ const Navbar = () => {
     };
   }, [scrollY]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setOpen(true);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const location = useLocation();
   const pathName = location.pathname;
+
   return (
     <div
       className={`py-2 sticky z-50 top-0 transition-all duration-300 ease-in-out font-Manrope ${
-        !scrollingUp || scrolledPastInitial
+        !open
+          ? "h-screen bg-white"
+          : !scrollingUp || scrolledPastInitial
           ? pathName === "/about" ||
             pathName === "/careers" ||
             pathName === "/contact"
@@ -40,39 +56,42 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className=" max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40">
-        <div className="grid md:flex justify-between items-center">
-          <div className="w-[150px] md:w-[200px] mt-5 md:mt-0">
+      <div className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40">
+        <div className=" flex flex-col md:flex md:flex-row justify-between md:items-center">
+          <div className="w-[150px] md:w-[200px] mt-5 mb-[32px] md:mb-0 md:mt-0">
             <Link to="/">
               <img
                 src={
                   pathName === "/about" ||
                   pathName === "/careers" ||
-                  pathName === "/contact"
+                  pathName === "/contact" ||
+                  !open
                     ? Logo2
                     : Logo
                 }
-                alt=""
+                alt="Logo"
               />
             </Link>
           </div>
           <div
-            className={`md:flex md:items-center ${
+            className={`   md:flex md:items-center ${
               pathName === "/about" ||
               pathName === "/careers" ||
               pathName === "/contact"
-                ? " text-[#061C60]"
+                ? "text-[#061C60]"
+                : !open
+                ? "text-[#061C60]"
                 : "text-white"
-            }  font-[400] ${!open ? "block" : "hidden"}`}
+            } font-[400] ${!open ? "block h-full" : "hidden md:block"}`}
           >
-            <ul className="grid md:flex gap-5 my-5 md:gap-10 list-none text-[14px] lg:text-[16px]">
+            <ul className="grid  md:flex gap-5 my-5 md:gap-10 list-none text-[14px] lg:text-[16px] mt-[32px] font-SatoshiMedium">
               <NavLink
                 to="/about"
                 className={({ isActive, isPending }) =>
                   isPending
-                    ? "text-[14px] lg:text-[16px] text-[#667085] font-[700] "
+                    ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] text-[#FF627E] font-[700] "
+                    ? "text-[14px] lg:text-[16px] text-[#FF627E] font-[700]"
                     : ""
                 }
               >
@@ -82,9 +101,9 @@ const Navbar = () => {
                 to="/services"
                 className={({ isActive, isPending }) =>
                   isPending
-                    ? "text-[14px] lg:text-[16px] text-[#667085] font-[700] "
+                    ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] text-[#FF627E] font-[700] "
+                    ? "text-[14px] lg:text-[16px] text-[#FF627E] font-[700]"
                     : ""
                 }
               >
@@ -94,9 +113,9 @@ const Navbar = () => {
                 to="/partners"
                 className={({ isActive, isPending }) =>
                   isPending
-                    ? "text-[14px] lg:text-[16px] text-[#667085] font-[700] "
+                    ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] text-[#FF627E] font-[700]  "
+                    ? "text-[14px] lg:text-[16px] text-[#FF627E] font-[700]"
                     : ""
                 }
               >
@@ -106,13 +125,26 @@ const Navbar = () => {
                 to="/careers"
                 className={({ isActive, isPending }) =>
                   isPending
-                    ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]  "
+                    ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? " text-[14px] lg:text-[16px] text-[#FF627E] font-[700]  "
+                    ? "text-[14px] lg:text-[16px] text-[#FF627E] font-[700]"
                     : ""
                 }
               >
                 <li>Careers</li>
+              </NavLink>
+
+              <NavLink
+                to="/contact"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "text-[14px] lg:text-[16px] md:hidden text-[#667085] font-[700]"
+                    : isActive
+                    ? "text-[14px] lg:text-[16px] md:hidden text-[#FF627E] font-[700]"
+                    : ""
+                }
+              >
+                <li>Contact Us</li>
               </NavLink>
             </ul>
           </div>
@@ -121,11 +153,12 @@ const Navbar = () => {
               className={`absolute top-[25px] right-4 md:hidden cursor-pointer ${
                 pathName === "/about" ||
                 pathName === "/careers" ||
-                pathName === "/contact"
+                pathName === "/contact" ||
+                !open
                   ? "text-[#061C60]"
                   : "text-white"
               }`}
-              onClick={() => setopen(false)}
+              onClick={() => setOpen(false)}
             >
               <Menu1LineIcon />
             </div>
@@ -134,14 +167,21 @@ const Navbar = () => {
               className={`absolute top-[25px] right-4 md:hidden cursor-pointer ${
                 pathName === "/about" ||
                 pathName === "/careers" ||
-                pathName === "/contact"
+                pathName === "/contact" ||
+                !open
                   ? "text-[#061C60]"
                   : "text-white"
               }`}
-              onClick={() => setopen(true)}
+              onClick={() => setOpen(true)}
             >
               <CloseLineIcon />
             </div>
+          )}
+
+          {open === false && (
+            <p className=" w-full  md:hidden text-center mt-[24px] px-[28px] py-[16px] rounded-[8px] bg-[#0E42E4] text-[#ffffff] md:text-[#141414] font-IBM text-[18px] font-[500]">
+              Partner with us
+            </p>
           )}
         </div>
       </div>
