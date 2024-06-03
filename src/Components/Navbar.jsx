@@ -138,10 +138,10 @@ const Navbar = () => {
                 to="/contact"
                 className={({ isActive, isPending }) =>
                   isPending
-                    ? "text-[14px] lg:text-[16px] md:hidden text-[#667085] font-[700]"
+                    ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] md:hidden text-[#FF627E] font-[700]"
-                    : ""
+                    ? "text-[14px] lg:text-[16px] text-[#FF627E] font-[700]"
+                    : " md:hidden"
                 }
               >
                 <li>Contact Us</li>
