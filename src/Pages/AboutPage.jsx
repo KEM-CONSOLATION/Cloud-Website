@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Testimonials from "../Components/Testimonials";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { RiArrowUpDoubleLine } from "react-icons/ri";
@@ -10,6 +9,7 @@ import AboutServices from "../Components/AboutServices";
 import NumbersAbout from "../Components/NumbersAbout";
 import CloudCode from "../Components/CloudCode";
 import Experts from "../Components/Experts";
+import AboutTestimonials from "../Components/AboutTestimonials";
 const AboutPage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -40,7 +40,7 @@ const AboutPage = () => {
     <div>
       <AboutHeroSection />
       <AboutServices />
-      <Testimonials/>
+      <AboutTestimonials />
       <NumbersAbout />
       <CloudCode />
       <Experts />
