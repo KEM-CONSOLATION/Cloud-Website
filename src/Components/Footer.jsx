@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../assets/Logo2.svg";
 
 const Footer = () => {
@@ -9,7 +10,10 @@ const Footer = () => {
           <div className=" py-[24px] grid md:flex gap-[24px] items-center text-[18px] md:text-[14px] font-IBM font-[600] md:font-SatoshiMedium text-[#061C60]">
             <p className=" ">About</p>
             <p className="">Services</p> <p className="">Partners</p>{" "}
-            <p className="">Careers</p> <p className="">Contact</p>
+            <p className="">Careers</p>{" "}
+            <Link to="/contact">
+              <p className="">Contact</p>
+            </Link>
           </div>
         </div>
 
@@ -31,7 +35,7 @@ const Footer = () => {
         </p>
         <div className=" grid md:flex items-center gap-[24px] mt-[24px] md:mt-0 text-[18px] md:text-[14px] font-[600] text-[#061C60] md:text-[#141414] font-IBM">
           <p>Terms of Service</p>
-          <p>Privacy Police</p>
+          <p>Privacy Policy</p>
         </div>
       </div>
     </div>

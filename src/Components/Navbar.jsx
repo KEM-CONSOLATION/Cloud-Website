@@ -37,7 +37,9 @@ const Navbar = () => {
     <div
       className={`py-2 sticky z-50 top-0 transition-all duration-300 ease-in-out font-Manrope ${
         !scrollingUp || scrolledPastInitial
-          ? pathName === "/about" || pathName === "/careers"
+          ? pathName === "/about" ||
+            pathName === "/careers" ||
+            pathName === "/contact"
             ? "bg-[#F1EDE8]"
             : pathName === "/partners"
             ? "bg-[#020406]"
@@ -51,7 +53,9 @@ const Navbar = () => {
             <Link to="/">
               <img
                 src={
-                  pathName === "/about" || pathName === "/careers"
+                  pathName === "/about" ||
+                  pathName === "/careers" ||
+                  pathName === "/contact"
                     ? Logo2
                     : Logo
                 }
@@ -61,7 +65,9 @@ const Navbar = () => {
           </div>
           <div
             className={`md:flex md:items-center ${
-              pathName === "/about" || pathName === "/careers"
+              pathName === "/about" ||
+              pathName === "/careers" ||
+              pathName === "/contact"
                 ? " text-[#061C60]"
                 : "text-white"
             }  font-[400] ${!open ? "block" : "hidden"}`}
@@ -120,7 +126,9 @@ const Navbar = () => {
           {open === true ? (
             <div
               className={`absolute top-[25px] right-4 md:hidden cursor-pointer ${
-                pathName === "/about" || pathName === "/careers"
+                pathName === "/about" ||
+                pathName === "/careers" ||
+                pathName === "/contact"
                   ? "text-[#061C60]"
                   : "text-white"
               }`}
@@ -131,7 +139,9 @@ const Navbar = () => {
           ) : (
             <div
               className={`absolute top-[25px] right-4 md:hidden cursor-pointer ${
-                pathName === "/about" || pathName === "/careers"
+                pathName === "/about" ||
+                pathName === "/careers" ||
+                pathName === "/contact"
                   ? "text-[#061C60]"
                   : "text-white"
               }`}
