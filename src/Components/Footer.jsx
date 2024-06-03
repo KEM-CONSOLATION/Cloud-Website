@@ -8,9 +8,18 @@ const Footer = () => {
         <div className=" border-b border-black md:border-none">
           <img src={Logo} alt="" />
           <div className=" py-[24px] grid md:flex gap-[24px] items-center text-[18px] md:text-[14px] font-IBM font-[600] md:font-SatoshiMedium text-[#061C60]">
-            <p className=" ">About</p>
-            <p className="">Services</p> <p className="">Partners</p>{" "}
-            <p className="">Careers</p>{" "}
+            <Link to="/about">
+              <p className=" ">About</p>
+            </Link>
+            <Link to="/services">
+              <p className="">Services</p>
+            </Link>
+            <Link to="/partners">
+              <p className="">Partners</p>
+            </Link>
+            <Link to="/careers">
+              <p className="">Careers</p>
+            </Link>
             <Link to="/contact">
               <p className="">Contact</p>
             </Link>

@@ -23,13 +23,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrollY]);
-  //   const location = useLocation();
-  //   const routesToHide = [
-  //     "/tenant-application",
-  //     "/agent-application",
-  //     "/landlord-application",
-  //     "/tenant-payment",
-  //   ];
 
   const location = useLocation();
   const pathName = location.pathname;
