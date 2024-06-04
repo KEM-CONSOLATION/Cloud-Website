@@ -10,12 +10,14 @@ const PartnersPartners = () => {
           Partners that trust us{" "}
         </p>
 
-        <div className=" flex items-center gap-[40px] mt-[40px] 2xl:mt-[80px] justify-between">
-          <img src={Nitro} alt="" />
-          <img src={Mtn} alt="" />
-          <img src={Airtel} alt="" />
-          <img src={Huawei} alt="" />
-        </div>
+        <marquee direction="left">
+          <div className=" flex items-center gap-[40px] mt-[40px] 2xl:mt-[80px] justify-center">
+            <img src={Nitro} alt="" />
+            <img src={Mtn} alt="" />
+            <img src={Airtel} alt="" />
+            <img src={Huawei} alt="" />
+          </div>
+        </marquee>
       </div>
     </div>
   );
