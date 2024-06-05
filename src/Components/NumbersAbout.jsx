@@ -1,4 +1,3 @@
-import { Typewriter } from "react-simple-typewriter";
 import Counter from "./Counter";
 import { useLocation } from "react-router-dom";
 
@@ -7,20 +6,12 @@ const NumbersAbout = () => {
   const pathName = location.pathname;
   return (
     <div className=" bg-[#ffffff    ]">
-      <div className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[60px]">
+      {/* <div className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[60px]"> */}
+      <div className="max-w-[1037px] mx-auto py-[60px]">
         {pathName !== "/partners" && (
-          <div className=" max-w-[600px] mx-auto">
-            <p className=" text-[30px] md:text-[36px] font-Inter font-[600] text-[#061C60] md:leading-[72px]">
-              {" "}
-              <Typewriter
-                words={["Our Numbers speak for themselves "]}
-                loop={0}
-                cursor
-                cursorStyle="_"
-                typeSpeed={70}
-                deleteSpeed={300}
-                delaySpeed={1000}
-              />
+          <div className=" text-center mb-[32px]">
+            <p className=" text-[30px] md:text-[36px] font-Inter font-[600] text-[#061C60] md:leading-[44px]">
+              Our Numbers speak for themselves
             </p>
           </div>
         )}

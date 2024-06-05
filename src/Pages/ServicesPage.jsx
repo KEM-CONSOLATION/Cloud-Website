@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Partners from "../Components/Partners";
 import Testimonials from "../Components/Testimonials";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,6 +9,7 @@ import ServiceHeroSection from "../Components/ServiceHeroSection";
 import ServicesPageComponent from "../Components/ServicesPageComponent";
 import BG from "../assets/partner.png";
 import MobileBG from "../assets/LaunchMobile.png";
+import PartnersPartners from "../Components/PartnersPartners";
 const ServicesPage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -41,7 +41,7 @@ const ServicesPage = () => {
       <ServiceHeroSection />
       <ServicesPageComponent />
       <Testimonials />
-      <Partners />
+      <PartnersPartners />
 
       <Launch
         backgroundImage={BG}

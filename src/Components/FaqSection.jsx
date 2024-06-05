@@ -48,7 +48,7 @@ const FaqSection = () => {
         className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[120px]"
         data-aos="fade-up"
       >
-        <p className=" text-[#061C60] font-IBM md:font-Manrope font-[700] text-[36px] text-center">
+        <p className=" text-[#061C60] font-IBM font-[700] text-[36px] text-center">
           Frequently Asked Questions
         </p>
         <div className=" mt-[24px]">

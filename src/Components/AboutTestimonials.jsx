@@ -47,10 +47,10 @@ const AboutTestimonials = () => {
   };
 
   return (
-    <div className="bg-[#ffffff]">
+    <div className="bg-[#FAFAFA]">
       <div className="max-w-7xl md:mx-10 mx-[10px] 2xl:max-w-full  py-[60px]">
         <div className="" data-aos="fade-up">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between gap-[50px] 2xl:gap-[100px]">
             <img
               src={LeftArrow}
               alt="Left Arrow"
@@ -68,7 +68,7 @@ const AboutTestimonials = () => {
                     key={index}
                     className="flex-shrink-0 flex w-full flex-col md:flex-row md:justify-between"
                   >
-                    <div className="max-w-[500px]">
+                    <div className=" max-w-[400px] 2xl:max-w-[587px]">
                       <img
                         src={Iphones}
                         alt="iPhones"

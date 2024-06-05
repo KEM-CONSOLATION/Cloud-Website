@@ -1,12 +1,12 @@
-<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M65.9216 49.8915C65.9216 64.0043 54.4809 75.4451 40.368 75.4451C26.2552 75.4451 14.8145 64.0043 14.8145 49.8915C14.8145 35.7786 26.2552 24.3379 40.368 24.3379C54.4809 24.3379 65.9216 35.7786 65.9216 49.8915Z" stroke="url(#paint0_linear_711_19994)" stroke-width="3.88007"/>
-<path d="M85.3612 49.8915C85.3612 60.5411 76.728 69.1743 66.0784 69.1743C55.4288 69.1743 46.7956 60.5411 46.7956 49.8915C46.7956 39.2419 55.4288 30.6087 66.0784 30.6087C76.728 30.6087 85.3612 39.2419 85.3612 49.8915Z" stroke="url(#paint1_linear_711_19994)" stroke-width="3.88007"/>
+<svg width="76" height="56" viewBox="0 0 76 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M53.9216 27.8915C53.9216 42.0043 42.4809 53.4451 28.368 53.4451C14.2552 53.4451 2.81445 42.0043 2.81445 27.8915C2.81445 13.7786 14.2552 2.33789 28.368 2.33789C42.4809 2.33789 53.9216 13.7786 53.9216 27.8915Z" stroke="url(#paint0_linear_711_19995)" stroke-width="3.88007"/>
+<path d="M73.3612 27.8915C73.3612 38.5411 64.728 47.1743 54.0784 47.1743C43.4288 47.1743 34.7956 38.5411 34.7956 27.8915C34.7956 17.2419 43.4288 8.60871 54.0784 8.60871C64.728 8.60871 73.3612 17.2419 73.3612 27.8915Z" stroke="url(#paint1_linear_711_19995)" stroke-width="3.88007"/>
 <defs>
-<linearGradient id="paint0_linear_711_19994" x1="31.5889" y1="20.5754" x2="73.6034" y2="75.4451" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_711_19995" x1="19.5889" y1="-1.4246" x2="61.6034" y2="53.4451" gradientUnits="userSpaceOnUse">
 <stop stop-color="#0E42E4"/>
 <stop offset="1" stop-color="#29CE9E"/>
 </linearGradient>
-<linearGradient id="paint1_linear_711_19994" x1="31.5889" y1="20.5754" x2="73.6034" y2="75.4451" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear_711_19995" x1="19.5889" y1="-1.4246" x2="61.6034" y2="53.4451" gradientUnits="userSpaceOnUse">
 <stop stop-color="#0E42E4"/>
 <stop offset="1" stop-color="#29CE9E"/>
 </linearGradient>

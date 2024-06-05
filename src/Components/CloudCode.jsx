@@ -1,5 +1,5 @@
 import Layer from "../assets/Layer_1.svg";
-import Best from "../assets/BestforBest1.svg";
+import Best from "../assets/BestforBest.png";
 import Collaboration from "../assets/Collaboration.svg";
 import DistantGoalinView from "../assets/DistantGoalinView.svg";
 
@@ -12,9 +12,9 @@ const CloudCode = () => {
       >
         <p className=" text-[#061C60] font-[700] text-[36px]">The Cloud code</p>
 
-        <div className=" mt-[48px] grid place-items-center md:grid-cols-2 lg:grid-cols-4 gap-[24px] items-start ">
+        <div className=" mt-[48px] grid place-items-center md:grid-cols-2 lg:grid-cols-4 gap-[24px] items-start  ">
           <div className=" grid gap-[32px]">
-            <img src={Layer} alt="" />
+            <img src={Layer} alt="" className=" w-[70px]" />
             <p className=" text-[#061C60] text-[28px] md:text-[30px] font-Inter font-[600]">
               All for you
             </p>
@@ -26,7 +26,7 @@ const CloudCode = () => {
             </p>
           </div>
           <div className=" grid gap-[32px]">
-            <img src={Best} alt="" />
+            <img src={Best} alt="" className="w-[70px]" />
             <p className=" text-[#061C60] text-[28px] md:text-[30px] font-Inter font-[600]">
               Better for best
             </p>
@@ -37,7 +37,7 @@ const CloudCode = () => {
             </p>
           </div>{" "}
           <div className=" grid gap-[32px]">
-            <img src={Collaboration} alt="" />
+            <img src={Collaboration} alt="" className="w-[70px]" />
             <p className=" text-[#061C60] text-[28px] md:text-[30px] font-Inter font-[600]">
               Collaboration
             </p>
@@ -48,7 +48,7 @@ const CloudCode = () => {
             </p>
           </div>{" "}
           <div className=" grid gap-[32px]">
-            <img src={DistantGoalinView} alt="" />
+            <img src={DistantGoalinView} alt="" className="w-[70px]" />
             <p className=" text-[#061C60] text-[28px] md:text-[30px] font-Inter font-[600]">
               Distant goal in view
             </p>

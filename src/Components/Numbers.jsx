@@ -1,6 +1,5 @@
 import Circle from "../assets/circle.svg";
 import Border from "../assets/border.svg";
-import { Typewriter } from "react-simple-typewriter";
 import Counter from "./Counter";
 
 const Numbers = () => {
@@ -11,15 +10,7 @@ const Numbers = () => {
           <div className=" max-w-[600px]">
             <p className=" text-[30px] md:text-[64px] font-SatoshiMedium text-white md:leading-[72px]">
               {" "}
-              <Typewriter
-                words={["Our numbers speak for themselves "]}
-                loop={0}
-                cursor
-                cursorStyle="_"
-                typeSpeed={70}
-                deleteSpeed={300}
-                delaySpeed={1000}
-              />
+              Our numbers speak for themselves
             </p>
           </div>
 

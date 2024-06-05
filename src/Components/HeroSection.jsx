@@ -1,4 +1,3 @@
-import { Typewriter } from "react-simple-typewriter";
 import BG from "../assets/GradientDark.svg";
 import HeroImage from "../assets/HeroMessage.svg";
 import Navbar from "./Navbar";
@@ -18,17 +17,7 @@ const HeroSection = () => {
         >
           <div className="max-w-[758px] ">
             <p className="font-Satoshi text-[48px] text-white md:leading-[60px]">
-              <Typewriter
-                words={[
-                  "       Customised Integration Solutions for Modern Businesses. ",
-                ]}
-                loop={0}
-                cursor
-                cursorStyle="_"
-                typeSpeed={70}
-                deleteSpeed={300}
-                delaySpeed={1000}
-              />
+              Customised Integration Solutions for Modern Businesses.
             </p>
             <p className="max-w-[600px] font-Satoshi-regular  text-[20px] text-white my-[32px]">
               Enhance Productivity and Connectivity with Cloud Integration

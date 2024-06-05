@@ -6,64 +6,54 @@ import ArrowRight from "../assets/ArrowRight.svg";
 import ArrowLeft from "../assets/ArrowLeft.svg";
 
 const Portfolio = () => {
-  const images = [Portfolio2, Portfolio3, Portfolio4, Portfolio4];
+  const images = [
+    Portfolio2,
+    Portfolio3,
+    Portfolio4,
+    Portfolio2,
+    Portfolio3,
+    Portfolio4,
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [touchStartX, setTouchStartX] = useState(null);
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === images.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 3000);
-
+    }, 10000);
     return () => clearInterval(interval);
-  }, [currentIndex]);
-
-  useEffect(() => {
-    const handleTouchStart = (e) => {
-      const touch = e.touches[0];
-      setTouchStartX(touch.clientX);
-    };
-
-    const handleTouchMove = (e) => {
-      if (!touchStartX) return;
-      const touch = e.touches[0];
-      const touchEndX = touch.clientX;
-      if (touchStartX - touchEndX > 75) {
-        nextSlide();
-        setTouchStartX(null);
-      }
-      if (touchStartX - touchEndX < -75) {
-        prevSlide();
-        setTouchStartX(null);
-      }
-    };
-
-    const slider = document.getElementById("slider");
-
-    slider.addEventListener("touchstart", handleTouchStart);
-    slider.addEventListener("touchmove", handleTouchMove);
-
-    return () => {
-      slider.removeEventListener("touchstart", handleTouchStart);
-      slider.removeEventListener("touchmove", handleTouchMove);
-    };
   }, []);
 
-  const sliderContainerStyles = {
-    display: "flex",
-    overflow: "hidden",
-    transition: "transform 0.8s ease-in-out",
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - (isMobile ? 1 : 3) : prevIndex - 1
+    );
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => {
+      if (isMobile) {
+        return (prevIndex + 1) % images.length;
+      } else {
+        if (prevIndex >= images.length - 3) {
+          return 0;
+        } else {
+          return prevIndex + 1;
+        }
+      }
+    });
   };
 
   return (
@@ -79,25 +69,44 @@ const Portfolio = () => {
         </div>
 
         <div className="relative mt-[20px]">
-          <div id="slider" style={sliderContainerStyles}>
-            {images
-              .slice(
-                currentIndex,
-                currentIndex + (window.innerWidth < 768 ? 1 : 3)
-              )
-              .map((image, index) => (
-                <div key={index} className="min-w-[100%] md:min-w-[33.33%]">
+          <div className="overflow-hidden">
+            <div
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{
+                transform: `translateX(-${
+                  currentIndex * (isMobile ? 100 : 100 / 3)
+                }%)`,
+              }}
+            >
+              {images.map((image, index) => (
+                <div
+                  key={index}
+                  className={`flex-shrink-0 ${
+                    isMobile ? "w-full" : "w-[calc(100%/3)]"
+                  }`}
+                >
                   <img
                     src={image}
                     alt={`Portfolio ${index + 1}`}
-                    className="mx-auto"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
               ))}
+            </div>
           </div>
-          <div className="flex items-center gap-[24px] mt-4">
-            <img src={ArrowLeft} alt="Previous" onClick={prevSlide} />
-            <img src={ArrowRight} alt="Next" onClick={nextSlide} />
+          <div className="flex justify-start gap-4 items-center mt-[48px]">
+            <img
+              src={ArrowLeft}
+              alt="Previous"
+              className="w-[48px] h-[48px] cursor-pointer"
+              onClick={prevSlide}
+            />
+            <img
+              src={ArrowRight}
+              alt="Next"
+              className="w-[48px] h-[48px] cursor-pointer"
+              onClick={nextSlide}
+            />
           </div>
         </div>
       </div>

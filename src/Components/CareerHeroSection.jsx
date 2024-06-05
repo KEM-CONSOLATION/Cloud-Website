@@ -14,7 +14,7 @@ const CareerHeroSection = () => {
           data-aos="fade-up"
         >
           <div className="">
-            <p className=" font-Satoshi text-[#061C60] text-[48px] 2xl:text-[64px]">
+            <p className=" text-center font-Satoshi text-[#061C60] text-[48px] 2xl:text-[64px]">
               Come work with us
             </p>
 

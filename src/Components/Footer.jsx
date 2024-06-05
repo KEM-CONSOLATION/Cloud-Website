@@ -30,7 +30,7 @@ const Footer = () => {
           <p className=" hidden md:block font-SatoshiMedium text-[14px] text-[#061C60]">
             Follow us
           </p>
-          <div className="  grid gap-[24px] md:gap-[5px]  text-[18px] md:text-[14px] font-[600] text-[#061C60] font-IBM md:text-[#141414]">
+          <div className="  grid gap-[24px] md:gap-[5px]  text-[18px] md:text-[14px] font-[500] text-[#061C60] font-IBM md:font-SatoshiRegular md:text-[#141414]">
             <p className=" ">Linkedin</p>
             <p className="">Twitter</p>
             <p className="">Instagram</p>{" "}
@@ -42,7 +42,7 @@ const Footer = () => {
         <p className=" ">
           Copyright © 2024 Cloud Integrated Limited. All rights reserved.
         </p>
-        <div className=" grid md:flex items-center gap-[24px] mt-[24px] md:mt-0 text-[18px] md:text-[14px] font-[600] text-[#061C60] md:text-[#141414] font-IBM">
+        <div className=" grid md:flex items-center gap-[24px] mt-[24px] md:mt-0 text-[18px] md:text-[12px] font-[600] md:font-SatoshiRegular md:font-normal text-[#061C60] md:text-[#141414] font-IBM">
           <p>Terms of Service</p>
           <p>Privacy Policy</p>
         </div>

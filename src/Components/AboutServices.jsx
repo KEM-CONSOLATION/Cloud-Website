@@ -2,7 +2,7 @@ import AboutImage from "../assets/mission.png";
 
 const AboutServices = () => {
   return (
-    <div className=" bg-[#FAFAFA]">
+    <div className=" bg-[#ffffff]">
       <div
         className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40 py-[120px]"
         data-aos="fade-up"

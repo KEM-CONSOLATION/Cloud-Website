@@ -52,7 +52,7 @@ const Navbar = () => {
             ? "bg-[#F1EDE8]"
             : pathName === "/partners"
             ? "bg-[#020406]"
-            : "bg-[#071A45]"
+            : "bg-gradient-to-r from-[#071A45] to-[#13594F]"
           : "bg-transparent"
       }`}
     >

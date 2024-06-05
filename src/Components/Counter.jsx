@@ -16,7 +16,7 @@ const Counter = ({ initialValue, interval, targetValue, value, currency }) => {
 
   return (
     <div className="grid gap-[32px]">
-      <p className="font-semibold text-[40px] md:text-[72px] md:leading-[80px]">
+      <p className="font-semibold font-Satoshi text-[40px] md:text-[72px] md:leading-[80px]">
         {currency}
         {count}
         {value}

@@ -69,12 +69,12 @@ const Testimonials = () => {
                     {testimonial.name}
                   </p>
                 </div>
-                <div>
-                  <p className="text-[#141414] font-SatoshiMedium text-[18px] md:text-[36px]">
+                <div className=" py-[32px]  border-b border-[#E6E7E7]">
+                  <p className="text-[#141414] font-SatoshiMedium text-[18px] md:text-[36px] ">
                     {testimonial.content}
                   </p>
                 </div>
-                <p className="text-[16px] md:text-[20px] text-[#141414] font-SatoshiMedium">
+                <p className="text-[16px] md:text-[20px] text-[#141414] font-SatoshiMedium py-[32px]">
                   {testimonial.company}
                 </p>
               </div>
