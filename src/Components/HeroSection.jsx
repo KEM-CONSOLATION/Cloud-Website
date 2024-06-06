@@ -1,5 +1,5 @@
-import BG from "../assets/GradientDark.svg";
-import HeroImage from "../assets/HeroMessage.svg";
+import BG from "../assets/GradientDark.png";
+import HeroImage from "../assets/HeroMessage.png";
 import Navbar from "./Navbar";
 import "aos/dist/aos.css";
 const HeroSection = () => {
