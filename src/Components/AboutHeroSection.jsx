@@ -12,7 +12,7 @@ const AboutHeroSection = () => {
           data-aos="fade-up"
         >
           <div className="max-w-[765px]">
-            <p className="font-Satoshi text-[64px] text-[#061C60] md:leading-[72px]  ">
+            <p className="font-Satoshi text-[60px] 2xl:text-[64px] text-[#061C60] md:leading-[72px]  ">
               A creative engine providing bespoke solutions for all your digital
               demands.
             </p>

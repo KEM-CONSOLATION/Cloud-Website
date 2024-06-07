@@ -10,7 +10,7 @@ const CareerHeroSection = () => {
         <Navbar />
 
         <div
-          className=" grid gap-[28px] md:flex items-center justify-between   max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40"
+          className=" grid gap-[28px] md:flex items-center justify-between  max-w-7xl md:mx-auto mx-5 2xl:mx-auto"
           data-aos="fade-up"
         >
           <div className="">

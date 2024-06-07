@@ -97,8 +97,8 @@ const Openings = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-[#B9F4E2] py-[16px]  ">
-        <p className=" text-[#040A0F] text-[16px] font-SatoshiMedium text-start md:text-center">
+      <div className=" bg-[#B9F4E2] py-[16px] ">
+        <p className=" text-[#040A0F] text-[16px] font-SatoshiMedium  md:text-center px-[16px] text-justify">
           We are dedicated to improving your digital experience. Our goal is to
           optimize your investment opportunities and strive to provide you with
           the best possible returns.

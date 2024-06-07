@@ -5,14 +5,14 @@ import "aos/dist/aos.css";
 const ServiceHeroSection = () => {
   return (
     <div
-      className=" h-full md:h-screen bg-cover  bg-center"
+      className=" h-screen bg-cover  bg-center"
       style={{ backgroundImage: `url(${BG})` }}
     >
       <div className=" ">
         <Navbar />
 
         <div
-          className=" grid gap-[28px] md:flex items-start justify-between mt-[154px]   max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40"
+          className=" grid gap-[28px] md:flex items-start justify-between mt-[9px] md:mt-[154px]  max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40"
           data-aos="fade-up"
         >
           <div className="max-w-[700px] ">
@@ -23,7 +23,7 @@ const ServiceHeroSection = () => {
               We have helped 600+ companies accelerate their business with
               top-notch technology solutions.
             </p>
-            <a className=" hidden md:inline-block px-[28px] py-[16px] rounded-[8px] bg-white text-[#141414] font-IBM text-[18px] font-[500]">
+            <a className=" block text-center md:inline-block px-[28px] py-[16px] rounded-[8px] bg-white text-[#061C60] md:text-[#141414] font-IBM text-[18px] font-[500]">
               Partner with us
             </a>
           </div>

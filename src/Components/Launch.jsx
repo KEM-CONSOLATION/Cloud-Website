@@ -20,7 +20,7 @@ const Launch = ({ backgroundImage, Mobile, text }) => {
         </div>
       </div>
       <div className=" bg-[#B9F4E2] py-[16px]  ">
-        <p className=" text-[#040A0F] text-[16px] font-SatoshiMedium text-center">
+        <p className=" text-[#040A0F] text-[16px] font-SatoshiMedium text-justify px-[16px] md:text-center">
           We are dedicated to improving your digital experience. Our goal is to
           optimize your investment opportunities and strive to provide you with
           the best possible returns.

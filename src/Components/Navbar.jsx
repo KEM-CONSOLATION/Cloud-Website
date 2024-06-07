@@ -6,23 +6,23 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(true);
-  const [scrollY, setScrollY] = useState(0);
-  const [scrollingUp, setScrollingUp] = useState(false);
-  const [scrolledPastInitial, setScrolledPastInitial] = useState(false);
+  // const [scrollY, setScrollY] = useState(0);
+  // const [scrollingUp, setScrollingUp] = useState(false);
+  // const [scrolledPastInitial, setScrolledPastInitial] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      setScrollingUp(currentScrollY < scrollY);
-      setScrollY(currentScrollY);
-      setScrolledPastInitial(currentScrollY > 0);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const currentScrollY = window.scrollY;
+  //     setScrollingUp(currentScrollY < scrollY);
+  //     setScrollY(currentScrollY);
+  //     setScrolledPastInitial(currentScrollY > 0);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrollY]);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [scrollY]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -42,18 +42,18 @@ const Navbar = () => {
 
   return (
     <div
-      className={`py-2 sticky z-50 top-0 transition-all duration-300 ease-in-out font-Manrope ${
+      className={`py-2  z-50 top-0 transition-all duration-300 ease-in-out font-Manrope ${
         !open
           ? "h-screen bg-white"
-          : !scrollingUp || scrolledPastInitial
-          ? pathName === "/about" ||
-            pathName === "/careers" ||
-            pathName === "/contact"
-            ? "bg-[#F1EDE8]"
-            : pathName === "/partners"
-            ? "bg-[#020406]"
-            : "bg-gradient-to-r from-[#071A45] to-[#13594F]"
-          : "bg-transparent"
+          : // : !scrollingUp || scrolledPastInitial
+            // ? pathName === "/about" ||
+            //   pathName === "/careers" ||
+            //   pathName === "/contact"
+            //   ? "bg-[#F1EDE8]"
+            //   : pathName === "/partners"
+            //   ? "bg-[#020406]"
+            //   : "bg-gradient-to-r from-[#071A45] to-[#13594F]"
+            "bg-transparent"
       }`}
     >
       <div className="max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40">
@@ -91,7 +91,7 @@ const Navbar = () => {
                   isPending
                     ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] text-[#FF627E] font-[700]"
+                    ? "text-[14px] lg:text-[16px] text-[#85EBCD] font-[700]"
                     : ""
                 }
               >
@@ -103,7 +103,7 @@ const Navbar = () => {
                   isPending
                     ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] text-[#FF627E] font-[700]"
+                    ? "text-[14px] lg:text-[16px] text-[#85EBCD] font-[700]"
                     : ""
                 }
               >
@@ -115,7 +115,7 @@ const Navbar = () => {
                   isPending
                     ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] text-[#FF627E] font-[700]"
+                    ? "text-[14px] lg:text-[16px] text-[#85EBCD] font-[700]"
                     : ""
                 }
               >
@@ -127,7 +127,7 @@ const Navbar = () => {
                   isPending
                     ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] text-[#FF627E] font-[700]"
+                    ? "text-[14px] lg:text-[16px] text-[#85EBCD] font-[700]"
                     : ""
                 }
               >
@@ -140,7 +140,7 @@ const Navbar = () => {
                   isPending
                     ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] text-[#FF627E] font-[700]"
+                    ? "text-[14px] lg:text-[16px] text-[#85EBCD] font-[700]"
                     : " md:hidden"
                 }
               >

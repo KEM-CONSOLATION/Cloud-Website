@@ -74,7 +74,7 @@ const Portfolio = () => {
               className="flex transition-transform duration-500 ease-in-out"
               style={{
                 transform: `translateX(-${
-                  currentIndex * (isMobile ? 100 : 100 / 3)
+                  currentIndex * (isMobile ? 100 : 100 / 3 + 24 / 3)
                 }%)`,
               }}
             >
@@ -82,7 +82,7 @@ const Portfolio = () => {
                 <div
                   key={index}
                   className={`flex-shrink-0 ${
-                    isMobile ? "w-full" : "w-[calc(100%/3)]"
+                    isMobile ? "w-full" : "w-[calc(100%/3 - 24px)] mr-6"
                   }`}
                 >
                   <img
