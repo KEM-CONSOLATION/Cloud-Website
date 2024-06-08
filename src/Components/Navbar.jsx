@@ -6,7 +6,6 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(true);
-  // const [scrollY, setScrollY] = useState(0);
   // const [scrollingUp, setScrollingUp] = useState(false);
   // const [scrolledPastInitial, setScrolledPastInitial] = useState(false);
 
