@@ -66,7 +66,7 @@ const AboutTestimonials = () => {
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}
-                    className="flex-shrink-0 flex w-full flex-col md:flex-row md:justify-between"
+                    className="flex-shrink-0 flex w-full flex-col lg:flex-row md:justify-between"
                   >
                     <div className=" max-w-[400px] 2xl:max-w-[587px]">
                       <img

@@ -11,7 +11,7 @@ const PartnerHeroSection = () => {
           className=" grid gap-[28px] md:flex items-center justify-between   max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40"
           data-aos="fade-up"
         >
-          <div className=" md:max-w-[500px] 2xl:max-w-[726px] mt-[48px] md:mt-0 ">
+          <div className=" md:max-w-[500px] 2xl:max-w-[726px]  md:mt-0 ">
             <p className="font-Satoshi text-[64px]  text-[#FFFFFF]  md:leading-[64px] leading-[72px]">
               How our clients <br className=" hidden md:block" /> are leading
               the change.

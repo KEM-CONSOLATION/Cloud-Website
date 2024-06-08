@@ -91,7 +91,7 @@ const Navbar = () => {
                   isPending
                     ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] text-[#85EBCD] font-[700]"
+                    ? "text-[14px] lg:text-[16px] text-[#66E6C1] font-[700]"
                     : ""
                 }
               >
@@ -103,7 +103,7 @@ const Navbar = () => {
                   isPending
                     ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] text-[#85EBCD] font-[700]"
+                    ? "text-[14px] lg:text-[16px] text-[#66E6C1] font-[700]"
                     : ""
                 }
               >
@@ -115,7 +115,7 @@ const Navbar = () => {
                   isPending
                     ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] text-[#85EBCD] font-[700]"
+                    ? "text-[14px] lg:text-[16px] text-[#66E6C1] font-[700]"
                     : ""
                 }
               >
@@ -127,7 +127,7 @@ const Navbar = () => {
                   isPending
                     ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] text-[#85EBCD] font-[700]"
+                    ? "text-[14px] lg:text-[16px] text-[#66E6C1] font-[700]"
                     : ""
                 }
               >
@@ -140,7 +140,7 @@ const Navbar = () => {
                   isPending
                     ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
-                    ? "text-[14px] lg:text-[16px] text-[#85EBCD] font-[700]"
+                    ? "text-[14px] lg:text-[16px] text-[#66E6C1] font-[700]"
                     : " md:hidden"
                 }
               >

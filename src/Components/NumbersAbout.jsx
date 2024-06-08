@@ -16,7 +16,7 @@ const NumbersAbout = () => {
           </div>
         )}
 
-        <div className=" text-[#061C60] grid gap-[20px] items-start md:grid-cols-2 md:place-items-start lg:flex lg:items-center lg:justify-between">
+        <div className=" text-[#061C60] grid gap-[20px] items-start md:grid-cols-2 md:place-items-center lg:flex lg:items-center lg:justify-between">
           <div className=" grid gap-[32px] text-center">
             <Counter initialValue={0} interval={1} targetValue={6} value={""} />
             <p className=" text-[#061C60] font-SatoshiMedium text-[18px] md:text-[20px]">

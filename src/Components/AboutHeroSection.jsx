@@ -8,7 +8,7 @@ const AboutHeroSection = () => {
         <Navbar />
 
         <div
-          className=" grid gap-[28px] md:flex items-start justify-between mt-[100px]   max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40"
+          className=" grid gap-[28px] lg:flex items-start justify-between  lg:mt-[100px]   max-w-7xl md:mx-10 mx-5 2xl:max-w-full 2xl:mx-40"
           data-aos="fade-up"
         >
           <div className="max-w-[765px]">

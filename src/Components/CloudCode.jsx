@@ -1,7 +1,7 @@
-import Layer from "../assets/Layer_1.svg";
-import Best from "../assets/BestforBest.png";
+import Layer from "../assets/All for you.svg";
+import Best from "../assets/Best for Best.svg";
 import Collaboration from "../assets/Collaboration.svg";
-import DistantGoalinView from "../assets/DistantGoalinView.svg";
+import DistantGoalinView from "../assets/Distant Goal in View.svg";
 
 const CloudCode = () => {
   return (
@@ -12,7 +12,7 @@ const CloudCode = () => {
       >
         <p className=" text-[#061C60] font-[700] text-[36px]">The Cloud code</p>
 
-        <div className=" mt-[48px] grid place-items-center md:grid-cols-2 lg:grid-cols-4 gap-[24px] items-start  ">
+        <div className=" mt-[48px] grid place-items-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-[24px] items-start  ">
           <div className=" grid gap-[32px]">
             <img src={Layer} alt="" className=" w-[70px]" />
             <p className=" text-[#061C60] text-[28px] md:text-[30px] font-Inter font-[600]">
