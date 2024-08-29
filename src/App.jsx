@@ -7,6 +7,8 @@ import ServicesPage from "./Pages/ServicesPage";
 import PartnerPage from "./Pages/PartnerPage";
 import CareersPage from "./Pages/CareersPage";
 import ContactPage from "./Pages/ContactPage";
+import TermsPage from "./Pages/TermsPage";
+import PrivacyPage from "./Pages/PrivacyPage";
 
 export default function App() {
   return (
@@ -20,6 +22,8 @@ export default function App() {
           <Route path="/partners" element={<PartnerPage />} />
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
         </Routes>
       </Router>
     </div>

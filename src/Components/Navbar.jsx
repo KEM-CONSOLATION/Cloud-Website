@@ -63,6 +63,8 @@ const Navbar = () => {
                 src={
                   pathName === "/about" ||
                   pathName === "/careers" ||
+                  pathName === "/terms" ||
+                  pathName === "/privacy" ||
                   pathName === "/contact" ||
                   !open
                     ? Logo2
@@ -76,6 +78,8 @@ const Navbar = () => {
             className={`   md:flex md:items-center ${
               pathName === "/about" ||
               pathName === "/careers" ||
+              pathName === "/terms" ||
+              pathName === "/privacy" ||
               pathName === "/contact"
                 ? "text-[#061C60]"
                 : !open

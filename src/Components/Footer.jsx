@@ -43,8 +43,12 @@ const Footer = () => {
           Copyright © 2024 Cloud Integrated Limited. All rights reserved.
         </p>
         <div className=" grid md:flex items-center gap-[24px] mt-[24px] md:mt-0 text-[18px] md:text-[12px] font-[600] md:font-SatoshiRegular md:font-normal text-[#061C60] md:text-[#141414] font-IBM">
-          <p>Terms of Service</p>
-          <p>Privacy Policy</p>
+          <Link to="/terms">
+            <p className=" cursor-pointer">Terms of Service</p>
+          </Link>
+          <Link to="/privacy">
+            <p>Privacy Policy</p>
+          </Link>
         </div>
       </div>
     </div>
