@@ -20,10 +20,10 @@ const CareerHeroSection = () => {
 
             <div className=" mt-[54px] grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[24px]">
               <div className=" bg-[#141414] rounded-[12px] p-[24px] max-w-[352px] h-[480px] relative">
-                <p className=" text-center font-SatoshiMedium text-[#EEEEEE] text-[25px] md:text-[30px]">
+                <p className=" text-left font-SatoshiMedium text-[#EEEEEE] text-[25px] md:text-[30px]">
                   Innovative Projects
                 </p>
-                <p className="  left-[24px] right-[24px] absolute bottom-[24px] font-SatoshiRegular text-[#EEEEEE] text-[18px]">
+                <p className="  left-[14px] right-[14px] absolute bottom-[24px] font-SatoshiRegular text-[#EEEEEE] text-[18px]">
                   You&apos;ll have the chance to engage in groundbreaking
                   projects that advance the frontiers of our industry, ensuring
                   your work is both thrilling and meaningful.
@@ -36,7 +36,7 @@ const CareerHeroSection = () => {
 
               <div className=" grid gap-[24px]">
                 <div className=" bg-[#0E42E4] rounded-[12px] p-[24px] ">
-                  <p className=" text-center font-SatoshiMedium text-[#EEEEEE] text-[25px] md:text-[30px]">
+                  <p className=" text-left font-SatoshiMedium text-[#EEEEEE] text-[25px] md:text-[30px]">
                     Professional Growth
                   </p>
                 </div>
@@ -44,11 +44,11 @@ const CareerHeroSection = () => {
               </div>
 
               <div className=" grid gap-[24px]">
-                <div className=" bg-[#66E6C1] rounded-[12px] p-[24px] max-w-[352px] h-[336px] relative">
+                <div className=" bg-[#66E6C1] rounded-[12px] p-[14px] max-w-[352px] h-[336px] relative">
                   <p className=" font-SatoshiMedium text-[#0E42E4] text-[25px] md:text-[30px]">
                     Collaborative Culture
                   </p>
-                  <p className=" absolute bottom-[24px] left-[24px] right-[24px] font-SatoshiRegular text-[#0E42E4] text-[18px]">
+                  <p className=" absolute bottom-[14px] left-[14px] right-[24px] font-SatoshiRegular text-[#0E42E4] text-[18px]">
                     We cultivate a cooperative and inclusive environment where
                     all ideas are respected, and you&apos;ll thrive in a
                     supportive, team-based setting.

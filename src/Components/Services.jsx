@@ -1,6 +1,7 @@
 import Vas from "../assets/vas.svg";
 import Games from "../assets/games.svg";
 import Lottery from "../assets/lottery.svg";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -37,9 +38,11 @@ const Services = () => {
 
               <div className=" max-w-[500px] 2xl:max-w-[644px] grid gap-[24px]">
                 <div className="">
-                  <p className=" text-center py-[16px] px-[28px] md:inline-block border border-[#0E42E4] rounded-[8px] font-IBM text-[14px] text-[#0E42E4]">
-                    See more
-                  </p>
+                  <Link to="/services">
+                    <p className=" text-center py-[16px] px-[28px] md:inline-block border border-[#0E42E4] rounded-[8px] font-IBM text-[14px] text-[#0E42E4]">
+                      See more
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -68,9 +71,11 @@ const Services = () => {
               </p>
               <div className="max-w-[500px] 2xl:max-w-[644px] grid gap-[24px]">
                 <div>
-                  <p className="text-center py-[16px] px-[28px] md:inline-block border border-[#0E42E4] rounded-[8px] font-IBM text-[14px] text-[#0E42E4]">
-                    See more
-                  </p>
+                  <Link to="/services">
+                    <p className="text-center py-[16px] px-[28px] md:inline-block border border-[#0E42E4] rounded-[8px] font-IBM text-[14px] text-[#0E42E4]">
+                      See more
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -93,9 +98,11 @@ const Services = () => {
 
               <div className=" max-w-[500px] 2xl:max-w-[644px] grid gap-[24px]">
                 <div className="">
-                  <p className=" text-center py-[16px] px-[28px] md:inline-block border border-[#0E42E4] rounded-[8px] font-IBM text-[14px] text-[#0E42E4]">
-                    See more
-                  </p>
+                  <Link to="/services">
+                    <p className=" text-center py-[16px] px-[28px] md:inline-block border border-[#0E42E4] rounded-[8px] font-IBM text-[14px] text-[#0E42E4]">
+                      See more
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>

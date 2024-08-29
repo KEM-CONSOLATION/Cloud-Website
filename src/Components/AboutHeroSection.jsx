@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import HeroImage from "../assets/mechanical.png";
 import Navbar from "./Navbar";
 import "aos/dist/aos.css";
 const AboutHeroSection = () => {
   return (
-    <div className=" h-full md:h-screen bg-cover  bg-center bg-[#F1EDE8]">
+    <div className=" h-full md:h-full pb-[20px] bg-cover  bg-center bg-[#F1EDE8]">
       <div className=" ">
         <Navbar />
 
@@ -23,16 +24,20 @@ const AboutHeroSection = () => {
               collaborates closely to tackle complex challenges and deliver
               exceptional results.
             </p>
-            <a className=" hidden md:inline-block px-[28px] py-[16px] rounded-[8px] bg-[#0E42E4] text-[#ffffff] font-IBM text-[18px] font-[500]">
-              Partner with us
-            </a>
+            <Link to="/contact">
+              <a className=" hidden md:inline-block px-[28px] py-[16px] rounded-[8px] bg-[#0E42E4] text-[#ffffff] font-IBM text-[18px] font-[500]">
+                Partner with us
+              </a>
+            </Link>
           </div>
 
           <div className=" max-w-[653px] my-[40px] md:my-0 ">
             <img src={HeroImage} alt="" className=" w-full mb-[24px] md:mb-0" />
-            <a className=" md:hidden text-center block mt-[24px] px-[28px] py-[16px] rounded-[8px] bg-[#0E42E4] text-[#ffffff] md:text-[#141414] font-IBM text-[18px] font-[500]">
-              Find out more
-            </a>
+            <Link to="/contact">
+              <a className=" md:hidden text-center block mt-[24px] px-[28px] py-[16px] rounded-[8px] bg-[#0E42E4] text-[#ffffff] md:text-[#141414] font-IBM text-[18px] font-[500]">
+                Find out more
+              </a>
+            </Link>
           </div>
         </div>
       </div>

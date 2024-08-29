@@ -140,7 +140,7 @@ const Navbar = () => {
                     ? "text-[14px] lg:text-[16px] text-[#667085] font-[700]"
                     : isActive
                     ? "text-[14px] lg:text-[16px] text-[#66E6C1] font-[700]"
-                    : " md:hidden"
+                    : ""
                 }
               >
                 <li>Contact Us</li>
@@ -178,9 +178,11 @@ const Navbar = () => {
           )}
 
           {open === false && (
-            <p className=" w-full  md:hidden text-center mt-[24px] px-[28px] py-[16px] rounded-[8px] bg-[#0E42E4] text-[#ffffff] md:text-[#141414] font-IBM text-[18px] font-[500]">
-              Partner with us
-            </p>
+            <Link to="/contact">
+              <p className=" w-full  md:hidden text-center mt-[24px] px-[28px] py-[16px] rounded-[8px] bg-[#0E42E4] text-[#ffffff] md:text-[#141414] font-IBM text-[18px] font-[500]">
+                Partner with us
+              </p>
+            </Link>
           )}
         </div>
       </div>

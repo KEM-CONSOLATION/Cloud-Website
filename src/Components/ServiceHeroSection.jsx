@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BG from "../assets/servicesHero.png";
 import Navbar from "./Navbar";
 import "aos/dist/aos.css";
@@ -23,9 +24,11 @@ const ServiceHeroSection = () => {
               We have helped 600+ companies accelerate their business with
               top-notch technology solutions.
             </p>
-            <a className=" block text-center md:inline-block px-[28px] py-[16px] rounded-[8px] bg-white text-[#061C60] md:text-[#141414] font-IBM text-[18px] font-[500]">
-              Partner with us
-            </a>
+            <Link to="/contact">
+              <a className=" block text-center md:inline-block px-[28px] py-[16px] rounded-[8px] bg-white text-[#061C60] md:text-[#141414] font-IBM text-[18px] font-[500]">
+                Partner with us
+              </a>
+            </Link>
           </div>
         </div>
       </div>

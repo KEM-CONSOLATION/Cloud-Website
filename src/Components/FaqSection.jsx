@@ -7,34 +7,72 @@ const FaqSection = () => {
   const questions = [
     {
       id: 1,
-      question: "Can you create custom products on demand?",
+      question: "What services does Cloud Integrated Inc. offer?",
       answer:
-        "Yes, we specialize in creating custom products tailored to your specifications and requirements.",
+        "Cloud Integrated Inc. provides a comprehensive suite of cloud-based solutions,including cloud migration, cloud security, infrastructure management, and data analytics. We also specialize in custom software development, IT consulting, and managed IT services to help businesses optimize their operations and leverage the power of cloud technology. ",
     },
     {
       id: 2,
-      question: "Do you provide technical and customer support?",
+      question:
+        "How does Cloud Integrated Inc. ensure the security of my data? ",
       answer:
-        "Yes, we offer comprehensive technical and customer support to ensure all your needs are met.",
+        " We prioritize the security of your data by implementing advanced encryption protocols, multi-factor authentication, and continuous monitoring. Our cloud security solutions are designed to protect your data from unauthorized access, cyber threats, and data breaches. We also adhere to industry standards and compliance regulations to ensure the highest level of security for your business.",
     },
     {
       id: 3,
-      question: "What's the financial structure of your business?",
+      question: "What industries does Cloud Integrated Inc. serve?",
       answer:
-        "Our financial structure is robust, allowing us to invest in cutting-edge technology and top talent to deliver exceptional services.",
+        "Cloud Integrated Inc. serves a wide range of industries, including finance, healthcare, retail, manufacturing, and technology. Our cloud solutions are tailored to meet the unique needs of each industry, helping businesses of all sizes to streamline their operations, reduce costs, and enhance productivity. ",
     },
     {
       id: 4,
-      question:
-        "Are there employment opportunities in Cloud Integrated Limited?",
+      question: "Can Cloud Integrated Inc. help with cloud migration?",
       answer:
-        "Yes, we are always looking for talented individuals to join our team. Please visit our careers page for current openings.",
+        " Yes, we specialize in cloud migration services. Our team of experts will assess your current IT infrastructure, develop a customized migration plan, and execute the migration with minimal disruption to your business. We ensure a smooth transition to the cloud, enabling you to take advantage of the scalability, flexibility, and cost-efficiency of cloud technology.",
     },
     {
       id: 5,
-      question: "Can you develop my product in other languages?",
+      question:
+        " What makes Cloud Integrated Inc. different from other cloud service providers?",
       answer:
-        "Absolutely! We have expertise in developing products in multiple languages to cater to a global audience.",
+        "Cloud Integrated Inc. stands out due to our personalized approach, deep technical expertise, and commitment to customer satisfaction. We work closely with our clients to understand their unique needs and deliver tailored solutions that drive business growth. Our team is dedicated to providing ongoing support and ensuring that our clients maximize the value of their cloud investments.",
+    },
+    {
+      id: 6,
+      question:
+        " How does Cloud Integrated Inc. support businesses in their digital transformation journey? ",
+      answer:
+        "We assist businesses in their digital transformation by providing end-to-end solutions that include cloud strategy development, implementation, and ongoing management. Our services help businesses modernize their IT infrastructure, enhance customer experiences, and improve operational efficiency through the adoption of cutting-edge cloud technologies.",
+    },
+
+    {
+      id: 7,
+      question:
+        "What is the process for getting started with Cloud Integrated Inc.?",
+      answer:
+        " Getting started with Cloud Integrated Inc. is easy. Simply contact us via our website or phone, and our team will schedule a consultation to understand your business needs. We will then provide a customized proposal outlining the recommended services and solutions. Once the proposal is accepted, our team will begin the implementation process, ensuring a seamless integration of our services into your existing operations. ",
+    },
+
+    {
+      id: 8,
+      question:
+        " Does Cloud Integrated Inc. offer support and maintenance services? ",
+      answer:
+        " Yes, we offer comprehensive support and maintenance services to ensure the ongoing performance and reliability of your cloud infrastructure. Our support services include 24/7 monitoring, troubleshooting, software updates, and regular system maintenance. We are committed to providing prompt and effective support to keep your business running smoothly.",
+    },
+    {
+      id: 9,
+      question:
+        "Can Cloud Integrated Inc. help with compliance and regulatory requirements?",
+      answer:
+        "Absolutely. We understand the importance of compliance in various industries and offer solutions that help businesses meet regulatory requirements. Our team stays up-to-date with industry standards and compliance regulations to ensure that your cloud environment is secure, compliant, and ready to meet any audit requirements. ",
+    },
+    {
+      id: 10,
+      question:
+        "What are the costs associated with Cloud Integrated Inc.’s services?",
+      answer:
+        "The cost of our services varies depending on the specific needs of your business and the complexity of the solutions required. We offer flexible pricing models, including pay-as-you-go, subscription-based, and custom pricing options. During your initial consultation, we will provide a detailed cost estimate based on your unique requirements and budget.",
     },
   ];
 

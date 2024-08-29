@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HeroImage from "../assets/handshake.png";
 import Navbar from "./Navbar";
 import "aos/dist/aos.css";
@@ -20,9 +21,11 @@ const PartnerHeroSection = () => {
               We have helped 600+ companies accelerate their business with
               top-notch technology solutions.
             </p>
-            <a className=" hidden md:inline-block px-[28px] py-[16px] rounded-[8px] text-[#141414] bg-[#ffffff] font-IBM text-[18px] font-[500]">
-              Partner with us
-            </a>
+            <Link to="/contact">
+              <a className=" hidden md:inline-block px-[28px] py-[16px] rounded-[8px] text-[#141414] bg-[#ffffff] font-IBM text-[18px] font-[500]">
+                Partner with us
+              </a>
+            </Link>
           </div>
 
           <div className=" my-[40px] md:my-0">
@@ -33,9 +36,11 @@ const PartnerHeroSection = () => {
                 className=" w-full mb-[24px] md:mb-0"
               />
             </div>
-            <a className=" md:hidden text-center block mt-[24px] px-[28px] py-[16px] rounded-[8px] bg-[#ffffff] text-[#061C60] md:text-[#141414] font-IBM text-[18px] font-[500]">
-              Partner with us
-            </a>
+            <Link to="/contact">
+              <a className=" md:hidden text-center block mt-[24px] px-[28px] py-[16px] rounded-[8px] bg-[#ffffff] text-[#061C60] md:text-[#141414] font-IBM text-[18px] font-[500]">
+                Partner with us
+              </a>
+            </Link>
           </div>
         </div>
       </div>

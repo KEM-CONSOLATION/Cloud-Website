@@ -1,4 +1,5 @@
 import { PropTypes } from "prop-types";
+import { Link } from "react-router-dom";
 
 const Launch = ({ backgroundImage, Mobile, text }) => {
   const isMobile = window.innerWidth <= 768;
@@ -14,9 +15,11 @@ const Launch = ({ backgroundImage, Mobile, text }) => {
           <p className="text-[30px] 2xl:text-[64px] font-SatoshiMedium mb-[66px]">
             {text}
           </p>
-          <p className="text-center py-[16px] px-[28px] md:inline-block bg-[#0E42E4] rounded-[8px] font-IBM text-[14px] md:text-[18px] text-[#ffffff]">
-            Partner with us
-          </p>
+          <Link to="/contact">
+            <p className="text-center py-[16px] px-[28px] md:inline-block bg-[#0E42E4] rounded-[8px] font-IBM text-[14px] md:text-[18px] text-[#ffffff]">
+              Partner with us
+            </p>
+          </Link>
         </div>
       </div>
       <div className=" bg-[#B9F4E2] py-[16px]  ">

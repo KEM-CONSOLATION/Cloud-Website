@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BG from "../assets/GradientDark.png";
 import HeroImage from "../assets/HeroMessage.png";
 import Navbar from "./Navbar";
@@ -23,9 +24,11 @@ const HeroSection = () => {
               Enhance Productivity and Connectivity with Cloud Integration
               Services. We&apos;re all about levelling up your product journey.
             </p>
-            <a className=" hidden md:inline-block px-[28px] py-[16px] rounded-[8px] bg-white text-[#141414] font-IBM text-[18px] font-[500]">
-              Partner with us
-            </a>
+            <Link to="/contact">
+              <a className=" hidden md:inline-block px-[28px] py-[16px] rounded-[8px] bg-white text-[#141414] font-IBM text-[18px] font-[500]">
+                Partner with us
+              </a>
+            </Link>
           </div>
 
           <div className=" max-w-[777px] my-[40px] md:my-0">

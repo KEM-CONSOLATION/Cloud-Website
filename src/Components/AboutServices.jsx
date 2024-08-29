@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AboutImage from "../assets/mission.png";
 
 const AboutServices = () => {
@@ -32,9 +33,11 @@ const AboutServices = () => {
             </p>
 
             <div className="">
-              <p className=" py-[16px] px-[28px] inline-block border border-[#0E42E4] rounded-[8px] font-IBM text-[14px] text-[#0E42E4]">
-                Partner with us
-              </p>
+              <Link to="/contact">
+                <p className=" py-[16px] px-[28px] inline-block border border-[#0E42E4] rounded-[8px] font-IBM text-[14px] text-[#0E42E4]">
+                  Partner with us
+                </p>
+              </Link>
             </div>
           </div>
         </div>
